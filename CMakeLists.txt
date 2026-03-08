@@ -5,5 +5,7 @@ project(AllHomeworks)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_subdirectory(19.02.2026/Task1)
 add_subdirectory(19.02.2026/Task2)
+add_subdirectory(19.02.2026/Task3)
+add_subdirectory(05.03.2026/Task1)
+add_subdirectory(26.02.2026/Array)
