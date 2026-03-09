@@ -27,7 +27,6 @@ void StringList::pushFront(string &&elem) {
     auto node = new Node{std::move(elem), unrealHead->next, unrealHead};
     unrealHead->next->prev = node;
     unrealHead->next = node;
-    unrealHead = node;
     ++size_;
 }
 

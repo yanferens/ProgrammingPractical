@@ -6,40 +6,29 @@ using namespace std;
 
 string testPushBackRValue()
 {
-    return "rvalue_back";
+    return "1";
 }
 
 string testPushFrontRValue()
 {
-    return "rvalue_front";
+    return "2";
 }
 
 int main()
 {
         StringList s;
 
-        string lvalue_str1 = "lvalue_back";
-        s.pushBack(lvalue_str1);
-
-        s.pushBack(testPushBackRValue());
-
-        string lvalue_str2 = "lvalue_front";
-        s.pushFront(lvalue_str2);
-
-        s.pushFront(testPushFrontRValue());
-
+        s.pushFront("1");
         s.printList();
-
-        s.popBack();
+        s.pushFront("2");
         s.printList();
-
-        s.popFront();
+        s.pushFront("3");
         s.printList();
-
-        cout << s.size() << endl;
-
-        s.clear();
-        cout << s.size() << endl;
+        s.pushFront("4");
+        s.printList();
+        s.pushBack("9");
+        s.printList();
+        s.pushFront("8");
         s.printList();
 
 }
